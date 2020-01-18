@@ -4,6 +4,7 @@
 var geddy = require('geddy');
 
 geddy.startCluster({
-  // Configuration here
-    environment: 'development'
+  	// Configuration here
+  	port: process.env.PORT || '4000',
+  	environment: process.env.NODE_ENV || 'development'
 });
